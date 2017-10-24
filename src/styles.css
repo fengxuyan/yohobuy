@@ -23,3 +23,6 @@ ul,li{
   list-style: none;
 }
 
+a:focus, input, textarea {
+  outline: none;
+}

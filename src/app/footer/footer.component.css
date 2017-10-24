@@ -2,14 +2,16 @@
   font-size: 12px;
   color: #fff;
 }
-.yoho-footer a{
-  color:#fff;
+
+.yoho-footer a {
+  color: #fff;
 
 }
 
-.yoho-footer a:hover{
+.yoho-footer a:hover {
   text-decoration: underline;
 }
+
 .yoho-footer .footerbottom {
   width: 100%;
   background: #000;
@@ -115,11 +117,13 @@
   line-height: 20px;
   margin-left: 10px;
 }
-.quality_pic{
+
+.quality_pic {
   background-image: url("../../assets/images/quality.png");
-  background-size:100% 100%;
+  background-size: 100% 100%;
 }
-.pic_area{
+
+.pic_area {
   display: inline-block;
   width: 27px;
   height: 30px;

@@ -1,0 +1,58 @@
+.simple-header {
+  height: 66px;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #222;
+}
+.simple-header .header-inner {
+  width: 990px;
+  height: 100%;
+  margin: 0 auto;
+}
+.simple-header .logo {
+  float: left;
+  line-height: 66px;
+  font-size: 0;
+}
+.simple-header .logo img {
+  vertical-align: middle;
+}
+.simple-header .header-tool {
+  float: right;
+  line-height: 66px;
+  font-size: 0;
+}
+.simple-header .header-tool li, .simple-header .header-tool li a, .simple-header .header-tool li span {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.simple-header .header-tool li {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+}
+.simple-header .header-tool li, .simple-header .header-tool li a, .simple-header .header-tool li span {
+  font-size: 12px;
+  vertical-align: middle;
+}
+.simple-header .header-tool .tool-options {
+  position: relative;
+  font-size: 0;
+  cursor: pointer;
+}
+.simple-header .header-tool li {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 28px;
+}
+.simple-header .header-tool .tool-options-large, .simple-header .header-tool .tool-options-large .tool-select {
+  width: 80px;
+  box-sizing: border-box;
+}
+.simple-header .header-tool .tool-options .iconfont, .simple-header .header-tool .tool-options span {
+  display: inline-block;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: top;
+}
