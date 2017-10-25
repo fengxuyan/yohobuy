@@ -1,4 +1,12 @@
-<!--<my-header></my-header>-->
-<!--<my-footer></my-footer>-->
-<router-outlet></router-outlet>
-<!--<my-login></my-login>-->
+<main class="main">
+
+  <!-- 公用任务栏 -->
+  <app-taskbar></app-taskbar>
+
+  <!-- 内容部分，内容随时可能变化 -->
+  <router-outlet></router-outlet>
+
+  <!-- 公用底部 -->
+  <app-footer></app-footer>
+
+</main>

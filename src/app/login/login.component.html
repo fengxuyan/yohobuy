@@ -1,4 +1,4 @@
-<my-login-header></my-login-header>
+
 <div class="login-page clearfix">
   <div style="font-size: 12px;text-align: center;">
     <div
@@ -12,13 +12,13 @@
     <h2 class="title">会员登录</h2>
     <input ChineseMobileValidator #userName="ngModel" [(ngModel)]="regModel.userName" name="userName" placeholder="邮箱/手机号码" required>
     <div *ngIf="userName.invalid && (userName.dirty || userName.touched)" class="text-danger">
-      <div *ngIf="userName.errors.required" >
+      <div *ngIf="userName.errors.required" class="input-text"  >
         邮箱/手机号码
       </div>
-      <div *ngIf="userName.errors.minlength">
+      <div *ngIf="userName.errors.minlength" class="input-text">
         最小长度不能小于12个字符
       </div>
-      <div *ngIf="userName.errors.maxLength">
+      <div *ngIf="userName.errors.maxLength" class="input-text">
         最大长度不能大于32个字符
       </div>
     </div>

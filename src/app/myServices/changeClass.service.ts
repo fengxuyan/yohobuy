@@ -21,21 +21,15 @@ export class ChangeClassService implements OnInit {
   }
   getUrl(): any {
     if(this.isContains(location.href,'boys')){
-      this.tab_class ='blue';
+      this.tab_class ='#000';
     }else if(this.isContains(location.href,'girls')){
-      this.tab_class ='girls';
+      this.tab_class ='#ff88ae';
     }else if(this.isContains(location.href,'kids')){
-      this.tab_class ='kids';
+      this.tab_class ='#7bd3f9';
     }else if(this.isContains(location.href,'lifestyle')){
-      this.tab_class ='lifestyle';
-    }else if(this.isContains(location.href,'index')){
-      this.tab_class ='orange';
-    }
-    else if(this.isContains(location.href,'login')){
-      this.tab_class ='yellow';
-    }
-    else if(this.isContains(location.href,'user')){
-      this.tab_class ='green';
+      this.tab_class ='#5e4b3c';
+    }else if(this.isContains(location.href,'user')){
+      this.tab_class ='user';
     }
     return this.tab_class;
   }

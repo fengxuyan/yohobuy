@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoginHeaderComponent} from '../header/login-header.component';
+// import { LoginHeaderComponent} from '../header/login-header.component';
 import { RegisterModel } from '../model/login-model';
 
 @Component({
@@ -19,6 +19,8 @@ export class LoginComponent {
       console.log('hello feng !');
       console.log('login success!');
       location.href='./user';
+    }else{
+      alert('用户名或密码错误');
     }
   }
 }

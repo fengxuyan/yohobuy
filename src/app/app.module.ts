@@ -1,47 +1,82 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// 表单验证
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {CustomFormsModule} from "ng2-validation";
+import {RouterModule} from '@angular/router';
+import {rootRouterConfig} from './app.routes';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import {FooterComponent} from './footer/footer.component';
-import {LoginHeaderComponent} from './header/login-header.component';
-import {HasloginHeaderComponent} from './header/haslogin-header.component';
 
+import { IndexComponent } from './index/index.component';
+import { FooterComponent } from './share/footer/footer.component';
+import { TaskbarComponent } from './share/taskbar/taskbar.component';
+import { HeadComponent } from './share/head/head.component';
+import { BoysComponent } from './boys/boys.component';
+import { GirlsComponent } from './girls/girls.component';
+import { KidsComponent } from './kids/kids.component';
+import { LifestyleComponent } from './lifestyle/lifestyle.component';
+
+import { PopularitylistComponent } from './boys-goods/boys-popularitylist/popularitylist.component';
+import { ThelatestreportComponent } from './boys-goods/boys-thelatestreport/thelatestreport.component';
+import { NewarrivalsComponent } from './boys-goods/boys-newarrivals/newarrivals.component';
+
+import { TrendfashionComponent } from './girls-goods/girls-trendfashion';
+import { EuropeamericaComponent } from './girls-goods/girls-europeamerica';
+import { NewarrivaldComponent } from './girls-goods/girls-newarrivald';
+
+import { HotcategoriesComponent } from './kids-goods/kids-hotcategories';
+import { BoykidsComponent } from './kids-goods/kids-boykids';
+
+import { BeautyComponent } from './lifestyle-goods/lifestyle-beauty';
+import { CategoryComponent } from './lifestyle-goods/lifestyle-category';
+import { TopComponent } from './lifestyle-goods/lifestyle-top';
+
+// 添加
 import { UserIndexComponent } from './user-index';
-
-import {CanActivate, RouterModule} from '@angular/router';
-
-import {HttpModule} from '@angular/http';
-
-import {LoginComponent} from './login';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule } from '@angular/common/http';
-
-import {rootRouterConfig} from './app.routes';
-import { IndexComponent } from './index';
-
-// 服务
 import { ChangeClassService } from './myServices';
+import {HttpModule} from '@angular/http';
+import {LoginComponent} from './login';
 
 
-import { ChineseMobileValidator } from './directives/Chinese-mobile-validator.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    IndexComponent,
     FooterComponent,
-    LoginHeaderComponent,
-    LoginComponent,
-    ChineseMobileValidator,
-    HasloginHeaderComponent,
+    HeadComponent,
+    BoysComponent,
+    GirlsComponent,
+    TaskbarComponent,
+    PopularitylistComponent,
+    ThelatestreportComponent,
+    NewarrivalsComponent,
+    TrendfashionComponent,
+    EuropeamericaComponent,
+    NewarrivaldComponent,
+    KidsComponent,
+    HotcategoriesComponent,
+    BoykidsComponent,
+    LifestyleComponent,
+    BeautyComponent,
+    CategoryComponent,
+    TopComponent,
+
     UserIndexComponent,
-    IndexComponent
+
+
+// 添加
+    LoginComponent
   ],
-  imports  : [FormsModule, CustomFormsModule, ReactiveFormsModule, HttpClientModule,  BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig)],
-  providers: [ChangeClassService],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(rootRouterConfig),
+
+    // 添加
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

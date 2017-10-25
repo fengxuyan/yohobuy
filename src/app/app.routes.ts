@@ -1,23 +1,31 @@
 import {Routes} from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import {FooterComponent} from './footer/footer.component';
-import {LoginHeaderComponent} from './header/login-header.component';
-import { UserIndexComponent } from './user-index';
+import {IndexComponent} from './index';
+
+import {GirlsComponent} from './girls';
+import {KidsComponent} from './kids';
+import {LifestyleComponent} from './lifestyle';
+
 import {LoginComponent} from './login';
-import { IndexComponent } from './index';
+import { UserIndexComponent } from './user-index';
 
 export const rootRouterConfig: Routes = [
   {
     path: '',
     redirectTo: 'index',
     pathMatch: 'full'
-  },
-  {
-
+  }, {
     path: 'index',
     component: IndexComponent
+  }, {
+    path: 'girls',
+    component: GirlsComponent
+  }, {
+    path: 'kids',
+    component: KidsComponent
+  }, {
+    path: 'lifestyle',
+    component: LifestyleComponent
   },
   {
 
@@ -28,6 +36,5 @@ export const rootRouterConfig: Routes = [
 
     path: 'user',
     component: UserIndexComponent
-  },
-
+  }
 ];

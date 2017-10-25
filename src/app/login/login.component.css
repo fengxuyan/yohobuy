@@ -63,6 +63,7 @@
   font-size: 14px;
   width: 268px;
   padding:10px;
+  margin: 0 auto;
 }
 .login-page .remember-me {
   cursor: pointer;
@@ -75,6 +76,8 @@
   color: #ff1901;
 }
 .text-danger{
-  float: left;
+  /*float: left;*/
+  margin: 0 auto;
   margin-left: 25px;
+
 }
