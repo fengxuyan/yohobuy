@@ -1,12 +1,9 @@
-
+import { Injectable } from '@angular/core';
 import { Component , OnInit} from '@angular/core';
 import {Router, ActivatedRoute, Params , CanActivate} from '@angular/router';
-@Component({
-  selector: 'my-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
-})
-export class HeaderComponent implements OnInit{
+
+@Injectable()
+export class ChangeClassService implements OnInit {
   localUrl : string;
   tab_class:string;
   constructor(private activatedRoute: ActivatedRoute) {}
@@ -36,6 +33,9 @@ export class HeaderComponent implements OnInit{
     }
     else if(this.isContains(location.href,'login')){
       this.tab_class ='yellow';
+    }
+    else if(this.isContains(location.href,'user')){
+      this.tab_class ='green';
     }
     return this.tab_class;
   }

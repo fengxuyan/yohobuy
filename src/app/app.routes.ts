@@ -29,4 +29,5 @@ export const rootRouterConfig: Routes = [
     path: 'user',
     component: UserIndexComponent
   },
+
 ];
